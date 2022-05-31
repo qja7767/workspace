@@ -1,0 +1,54 @@
+$columnWidth: 6.5%;
+$gutterWidth: 2%; // mixin
+@mixin col($count) {
+  width: ($columnWidth*$count) + ($gutterWidth * ($count - 1));
+}
+//layout
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.layout {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  background: green;
+}
+
+.row {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  &.justify-content-start { justify-content: flex-start;}
+  &.justify-content-end { justify-content: flex-end;}
+  &.justify-content-center { justify-content: center;}
+  &.justify-content-between { justify-content: space-between;}
+  &.justify-content-around { justify-content: space-around;}
+  [class *= col] {
+    // float: left;
+    // margin-left: $gutterWidth;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    &:first-child {
+      // margin-left: 0;
+    }
+  }
+  //mixin
+  @for $i from 1 through 12 {
+    .col-#{$i} { @include col($i); };
+  };
+}
