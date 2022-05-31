@@ -1,0 +1,220 @@
+body.subpage {
+  * {
+    box-sizing: border-box;
+  }
+  main {
+    .sub-text-big {
+      margin-top: 20px;
+      text-align: center;
+      font-size: $fontSizeBig;
+      &.cart {
+        border: 1px solid #d2d2d2;
+        padding: 14px 0;
+      }
+    }
+    .sub-text-middle {
+      margin-top: 20px;
+      text-align: center;
+      font-size: $fontSizeNormal;
+    }
+    .container {
+      width: 100%;
+      margin-top: 80px;
+      .about-inner {
+        margin: 0 auto;
+        width: 777px;
+        .about-text-box {
+          letter-spacing: -0.5px;
+          padding: 35px 0 40px 0px;
+          p {
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 10px;
+          }
+          div {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            word-break: keep-all;
+            word-wrap: break-word;
+          }
+        }
+      }
+      .founders-box, .certi-box {
+        display: flex;
+        height: 160px;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        h4 {
+          font-size: $fontSizeSmall;
+          font-weight: 600;
+          line-height: 1;
+          color: #777;
+          margin-top: -5px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: $fontSizeSmall;
+          font-weight: 300;
+          line-height: 26px;
+          letter-spacing: -1px;
+        }
+      }
+      .founders-relative {
+        position: relative;
+      }
+      .founders {
+        min-height: 120px;
+        padding: 0 0 0 140px;
+        &.pic1 {background: url("../img/noelo-clone/whowheresec01.png") top left no-repeat;}
+        &.pic2 {background: url("../img/noelo-clone/whowheresec02.png") top left no-repeat;}
+        &.pic3 {background: url("../img/noelo-clone/whowheresec03.png") top left no-repeat;}
+        &.pic4 {background: url("../img/noelo-clone/whowheresec04.png") top left no-repeat;}
+        &.pic5 {background: url("../img/noelo-clone/panel1.png") top left no-repeat;}
+        &.pic6 {background: url("../img/noelo-clone/panel2.png") top left no-repeat;}
+        &.pic7 {background: url("../img/noelo-clone/panel3.png") top left no-repeat;}
+        &.pic8 {background: url("../img/noelo-clone/panel4.png") top left no-repeat;}
+        &.pic9 {background: url("../img/noelo-clone/panel5.png") top left no-repeat;}
+      }
+      .certi-relative {
+        position: relative;
+      }
+      .certi {
+        min-height: 120px;
+        padding: 0 0 0 140px;
+        &.pic1 {background: url("../img/noelo-clone/certi1.png") top left no-repeat;}
+        &.pic2 {background: url("../img/noelo-clone/certi2.png") top left no-repeat;}
+        &.pic3 {background: url("../img/noelo-clone/certi3.png") top left no-repeat;}
+        &.pic4 {background: url("../img/noelo-clone/certi4.png") top left no-repeat;}
+        &.pic5 {background: url("../img/noelo-clone/certi5.png") top left no-repeat;}
+        &.pic6 {background: url("../img/noelo-clone/certi6.png") top left no-repeat;}
+        &.pic7 {background: url("../img/noelo-clone/certi7.png") top left no-repeat;}
+        &.pic8 {background: url("../img/noelo-clone/certi8.png") top left no-repeat;}
+        &.pic9 {background: url("../img/noelo-clone/certi9.png") top left no-repeat;}
+      }
+      .make-wish {
+        position: relative;
+        display: flex;
+        height: 777px;
+        &.pic1 {background: url("../img/noelo-clone/wish1.png") center center no-repeat;}
+        &.pic2 {background: url("../img/noelo-clone/wish2.png") center center no-repeat;}
+        }
+      .food-grade {
+        position: relative;
+        display: flex;
+        height: 777px;
+        &.pic1 {background: url("../img/noelo-clone/foodgrade1.png") center center no-repeat;}
+        &.pic2 {background: url("../img/noelo-clone/foodgrade2.png") center center no-repeat;}
+      }
+      .pentacera {
+        position: relative;
+        display: flex;
+        height: 777px;
+        &.pic1 {background: url("../img/noelo-clone/pentacera1.png") center center no-repeat;}
+        &.pic2 {
+          height: 480px;
+          background: url("../img/noelo-clone/pentacera2.png") center center no-repeat;
+        }
+      }
+      .about-image-box1 {
+        position: relative;
+        display: flex;
+        background: url("../img/noelo-clone/brandstory1.png") center center no-repeat;
+        height: 777px;
+      }
+      .about-image-box2 {
+        position: relative;
+        display: flex;
+        background: url("../img/noelo-clone/brandstory2.png") center center no-repeat;
+        height: 777px;
+      }
+      .about-image-box3 {
+        position: relative;
+        display: flex;
+        background: url("../img/noelo-clone/brandstory3.png") center center no-repeat;
+        height: 777px;
+      }
+      .whoweare-image-box1 {
+        position: relative;
+        display: flex;
+        background: url("../img/noelo-clone/whoweare1.png") center center no-repeat;
+        height: 777px;
+      }
+      // 서브페이지 내부 메뉴
+      #lnb {
+        flex: 230px;
+        flex-shrink: 1;
+        flex-grow: 0;
+        box-sizing: border-box;
+        height: 120px;
+        background: #faf8f2;
+        strong {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          font-size: $fontSizeMid;
+          padding: 20px 0;
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+          li {
+            margin: 0 10px;
+            a{
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              line-height: 50px;
+              font-size: $fontSizeSmall;
+              box-sizing: border-box;
+              transition: 0.5s;
+              font-weight: 300;
+              &:hover {
+                padding-left: 3px;
+                padding-right: 3px;
+              }
+              &.on {
+                color: $subPageOrangeColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .subPageBanner {
+    .sub-banner {
+      height: 450px;
+      background: center center no-repeat;
+      max-width: 100%;
+      .bannerTextWrap {
+        display: flex;
+      }
+    }
+  }
+  .sub-content {
+    width: 840px;
+    margin: 0 auto;
+    .sub-row {
+      padding: 50px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .sub-column {
+        position: relative;
+        .sub-items {
+          .sub-img {
+            max-width: 400px;
+            max-height: 400px;
+            background: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+
+}
