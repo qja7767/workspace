@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html,body{
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html,body,ul,li,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+a { text-decoration: none; color: black;}
+
+img {
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  transition: .5s;
+  font-weight: 700;
+}
+
+a:hover {
+  color: black;
+}
+
+.navbar a:hover{
+  color: #18d26e;
+}
+
+body {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.nav {
+  margin: 0 auto;
+}
+
+.navbar-brand.main {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.navbar-brand.right {
+  padding: 0 5px;
+}
+
+.row.first {
+  margin-top: 40px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.container.guide1 {
+  padding: 80px 0;
+}
+
+.container-fluid {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+.leg {
+  margin-top: 100px;
+}
+
+.button-wrap {
+  margin-top: 30px;
+}
+
+.col-text, .col {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.card {
+  padding: 5px;
+}
+
+.card.guide {
+  padding: 0;
+}
+
+.card.user {
+  background: #f8f8f8;
+}
+
+.card.user img {
+  border-radius: 50px;
+}
+
+footer {
+  border-top: 1px solid #d9d9d9;
+}
+
+.container.footer {
+  /* background: red; */
+  margin: 100px;
+}

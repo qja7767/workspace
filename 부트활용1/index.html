@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/customize.css">
+  <title>싱그러운 집(부트 활용)</title>
+</head>
+
+<body>
+  <!-- boot top nav bar -->
+  <a class="navbar-brand main" href="#">
+    <img src="./img/sp_common.png">
+  </a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <ul class="nav justify-content">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">커뮤니티</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">쇼핑</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">싱그런 여행</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">마이가든</a>
+        </li>
+      </ul>
+      <ul class="nav justify-content">
+        <div class="nav-container">
+          <a class="navbar-brand right" href="#">
+            <img src="./img/gnb-user.png" alt="" width="24" height="24">
+          </a>
+          <a class="navbar-brand right" href="#">
+            <img src="./img/gnb-cart.png" alt="" width="24" height="24">
+          </a>
+          <a class="navbar-brand right" href="#">
+            <img src="./img/gnb-pen.png" alt="" width="24" height="24">
+          </a>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- main start -->
+  <main role="main">
+    <!-- boot carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active data-bs-interval=" 2000"">
+          <img src="./img/slide1.jpg" class="w-80">
+        </div>
+        <div class="carousel-item data-bs-interval=" 2000"">
+          <img src="./img/slide2.jpg" class="w-80">
+        </div>
+        <div class=" carousel-item data-bs-interval=" 2000"">
+          <img src=" ./img/slide3.jpg" class="w-80">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+    <!-- content area start -->
+    <div class="container">
+      <!-- 부트 로우칼럼 -->
+      <div class="row first">
+        <div class="col-lg-2">
+          <a href="#"><img src="./img/circle1.jpg" width="140" height="140">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+          </a>
+          <p class="col-text">공기정화</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#"><img src="./img/circle2.jpg" width="140" height="140">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+          </a>
+          <p class="col-text">DIY/체험</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#"><img src="./img/circle3.jpg" width="140" height="140">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+          </a>
+          <p class="col-text">쇼핑하기</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#"><img src="./img/circle4.jpg" width="140" height="140">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+          </a>
+          <p class="col-text">싱집사스토리</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#"><img src="./img/circle5.jpg" width="140" height="140">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+          </a>
+          <p class="col-text">플랜테리어TIP</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#"><img src="./img/circle6.jpg" width="140" height="140">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+          </a>
+          <p class="col-text">이벤트</p>
+        </div>
+      </div>
+    </div>
+    <!-- boot button -->
+    <div class="container">
+      <h3>유저 스토리</h3>
+      <div class="button-wrap">
+        <button type="button" class="btn top btn-primary">전체</button>
+        <button type="button" class="btn btn-secondary">식물/플라워</button>
+        <button type="button" class="btn btn-success">플랜테리어</button>
+        <button type="button" class="btn btn-danger">가드닝 용품</button>
+        <button type="button" class="btn btn-warning">DIY/체험</button>
+        <button type="button" class="btn btn-info">싱그런 여행</button>
+        <button type="button" class="btn btn-light">친환경라이프</button>
+      </div>
+      <!-- 부트 로우칼럼 -->
+      <div class="row first">
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/pic4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">벌레잡이 제비꽃 택배해드립니다</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem">
+              <img src="./img/pic2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">반려식량 근황</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/pic3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">제로웨이스트 카페, 제주물결</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/pic4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">은은한 향의 겹작약<사라>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row first">
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/pic6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">사무실에서 바질키우기</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/pic8.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">자연이 주는 선물</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/pic6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">울산 식물 카페,카페 파이니</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/pic8.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">화분으로 옮긴 호프셀렘</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h3>인기 계정 랭킹</h3>
+      <!-- 부트 버튼 -->
+      <div class="button-wrap">
+        <button type="button" class="btn top btn-primary">추천 계정</button>
+        <button type="button" class="btn btn-secondary">인기 계정</button>
+      </div>
+      <div class="row first">
+        <div class="col-lg-4">
+          <div class="card user mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/user1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <a href="#">
+                    <h5 class="card-title">그린데이즈</h5>
+                  </a>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card user mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/user2.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <a href="#">
+                    <h5 class="card-title">동동이</h5>
+                  </a>
+                  <p class="card-text"><small class="text-muted">Last updated 31 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card user mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/user3.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <a href="#">
+                    <h5 class="card-title">대구식물디자이너</h5>
+                  </a>
+                  <p class="card-text"><small class="text-muted">Last updated 68 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- boot offcanvas -->
+    <div class="container">
+      <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h6 class="border-bottom border-gray pb-2 mb-2">싱그런 여행</h6>
+        <div class="media text-muted pt-3">
+          <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#007bff" />
+            <image href="./img/user1.jpg" width="32" height="32" />
+          </svg>
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <a href="#">
+                <strong class="text-gray-dark">제주도 감귤따기체험</strong>
+              </a>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">#제주도 #감귤따기체험 #여행</span>
+          </div>
+        </div>
+        <div class="media text-muted pt-3">
+          <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#007bff" />
+            <image href="./img/user2.jpg" width="32" height="32" />
+          </svg>
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <a href="#">
+                <strong class="text-gray-dark">강원도 춘천 그린보드[5월]</strong>
+              </a>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">#강원도 #춘천 #그린보드 #5월</span>
+          </div>
+        </div>
+        <div class="media text-muted pt-3">
+          <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#007bff" />
+            <image href="./img/user3.jpg" width="32" height="32" />
+          </svg>
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <a href="#">
+                <strong class="text-gray-dark">울산 카페 파이니</strong>
+              </a>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">#울산 #카페파이니 #울산식물카페 #식물카페</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- boot row,column,card -->
+    <div class="container leg">
+      <h3>MD`s Pick</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <a href="#">
+            <div class="card">
+              <img src="./img/list1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">호프셀렘 수경재배 set</h5>
+                <p class="card-text">Price : 27,000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card">
+              <img src="./img/list2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">[써니사이드플랜트] 알로카시아</h5>
+                <p class="card-text">Price : 32,500</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card">
+              <img src="./img/list8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">[더베르데가든]액상비료</h5>
+                <p class="card-text">Price : 7,300</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card">
+              <img src="./img/list5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">[올플랜츠]자이언트파피루스</h5>
+                <p class="card-text">Price : 16,000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card">
+              <img src="./img/list6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">플랜테리어 이동식 행거형 선반</h5>
+                <p class="card-text">Price : 19,900</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card">
+              <img src="./img/list7.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">[더베르데가든]식물용 소프트 타이</h5>
+                <p class="card-text">Price : 5,900</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- boot row,column,image -->
+    <div class="container guide1">
+      <h3>가이드북</h3>
+      <div class="row row-cols-1 row-cols-md-4">
+        <div class="col">
+          <a href="#">
+            <div class="card guide">
+              <img src="./img/guide1.png" class="rounded" alt="...">
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card guide">
+              <img src="./img/guide2.png" class="rounded" alt="...">
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card guide">
+              <img src="./img/guide3.png" class="rounded" alt="...">
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card guide">
+              <img src="./img/guide4.png" class="rounded" alt="...">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container guide2">
+      <h3>싱그러움을 전해보세요</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-10">
+        <div class="col">
+          <a href="#">
+            <div class="card text-bg-light mb-6" style="max-width: 36rem;">
+              <div class="card-header">판매자 신청</div>
+              <div class="card-body">
+                <p class="card-text">싱그러운집과 함께 해요</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#">
+            <div class="card text-bg-light mb-6" style="max-width: 36rem;">
+              <div class="card-header">사업자 구매회원 신청</div>
+              <div class="card-body">
+                <p class="card-text">VVIP 혜택을 누려보세요</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- boot footer -->
+    <footer class="container footer py-5">
+      <div class="row">
+        <div class="col-12 col-md">          
+          <p class="card-text">싱그러운 집</p>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2022</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Menu</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+
+</html>
