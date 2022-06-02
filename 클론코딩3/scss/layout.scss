@@ -219,20 +219,38 @@ body.on {
                   position: static;
                   border-right: 1px solid #e9e9e9;
                   text-align: center;
-                  &:nth-child(1) > a:before {background-position: 0 0};
-                  &:nth-child(2) > a:before {background-position: -84px 0};
-                  &:nth-child(3) > a:before {background-position: -168px 0};
-                  &:nth-child(4) > a:before {background-position: -252px 0};
-                  &:nth-child(5) > a:before {background-position: -340px 0};
-                  &:nth-child(6) > a:before {background-position: -424px 0};
-                  &:nth-child(7) > a:before {background-position: -508px 0};
-                  &:nth-child(8) > a:before {background-position: -592px 0};
-                  &:nth-child(1) > .a2:before {background-position: 0 0px};
-                  &:nth-child(2) > .a2:before {background-position: -84px 0px};
-                  &:nth-child(3) > .a2:before {background-position: -168px 0px};
-                  &:nth-child(4) > .a2:before {background-position: -252px 0px};
-                  &:nth-child(5) > .a2:before {background-position: -340px 0px};
-                  &:nth-child(6) > .a2:before {background-position: -424px 0px};
+                  @for $i from 0 to 9{
+                    &:nth-child(#{$i}) > a:before { background-position: ($i*-84px) 0};
+                    &:nth-child(#{$i}):hover > a:before { background-position: ($i*-84px) -84px};
+                  }
+                  // &:nth-child(1) > a:before {background-position: 0 0};
+                  // &:nth-child(2) > a:before {background-position: -84px 0};
+                  // &:nth-child(3) > a:before {background-position: -168px 0};
+                  // &:nth-child(4) > a:before {background-position: -252px 0};
+                  // &:nth-child(5) > a:before {background-position: -340px 0};
+                  // &:nth-child(6) > a:before {background-position: -424px 0};
+                  // &:nth-child(7) > a:before {background-position: -508px 0};
+                  // &:nth-child(8) > a:before {background-position: -592px 0};
+                  // &:nth-child(1):hover > a:before {background-position: 0 -84px};
+                  // &:nth-child(2):hover > a:before {background-position: -84px -84px};
+                  // &:nth-child(3):hover > a:before {background-position: -168px -84px};
+                  // &:nth-child(4):hover > a:before {background-position: -252px -84px};
+                  // &:nth-child(5):hover > a:before {background-position: -340px -84px};
+                  // &:nth-child(6):hover > a:before {background-position: -424px -84px};
+                  // &:nth-child(7):hover > a:before {background-position: -508px -84px};
+                  // &:nth-child(8):hover > a:before {background-position: -592px -84px};
+                  // &:nth-child(1) > .a2:before {background-position: 0 0px};
+                  // &:nth-child(2) > .a2:before {background-position: -84px 0px};
+                  // &:nth-child(3) > .a2:before {background-position: -168px 0px};
+                  // &:nth-child(4) > .a2:before {background-position: -252px 0px};
+                  // &:nth-child(5) > .a2:before {background-position: -340px 0px};
+                  // &:nth-child(6) > .a2:before {background-position: -424px 0px};
+                  // &:nth-child(1):hover > .a2:before {background-position: 0 -84px};
+                  // &:nth-child(2):hover > .a2:before {background-position: -84px -84px};
+                  // &:nth-child(3):hover > .a2:before {background-position: -168px -84px};
+                  // &:nth-child(4):hover > .a2:before {background-position: -252px -84px};
+                  // &:nth-child(5):hover > .a2:before {background-position: -340px -84px};
+                  // &:nth-child(6):hover > .a2:before {background-position: -424px -84px};
                   .a2 {
                     &:before {
                       background: url("../img/gnb_ico_ir.png");

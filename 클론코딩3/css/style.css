@@ -372,60 +372,76 @@ body.on {
   text-align: center;
 }
 
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(1) > a:before {
-  background-position: 0 0;
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(0) > a:before {
+  background-position: 0px 0;
 }
 
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(2) > a:before {
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(0):hover > a:before {
+  background-position: 0px -84px;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(1) > a:before {
   background-position: -84px 0;
 }
 
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(3) > a:before {
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(1):hover > a:before {
+  background-position: -84px -84px;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(2) > a:before {
   background-position: -168px 0;
 }
 
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(4) > a:before {
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(2):hover > a:before {
+  background-position: -168px -84px;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(3) > a:before {
   background-position: -252px 0;
 }
 
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(3):hover > a:before {
+  background-position: -252px -84px;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(4) > a:before {
+  background-position: -336px 0;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(4):hover > a:before {
+  background-position: -336px -84px;
+}
+
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(5) > a:before {
-  background-position: -340px 0;
+  background-position: -420px 0;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(5):hover > a:before {
+  background-position: -420px -84px;
 }
 
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(6) > a:before {
-  background-position: -424px 0;
+  background-position: -504px 0;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(6):hover > a:before {
+  background-position: -504px -84px;
 }
 
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(7) > a:before {
-  background-position: -508px 0;
+  background-position: -588px 0;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(7):hover > a:before {
+  background-position: -588px -84px;
 }
 
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(8) > a:before {
-  background-position: -592px 0;
+  background-position: -672px 0;
 }
 
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(1) > .a2:before {
-  background-position: 0 0px;
-}
-
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(2) > .a2:before {
-  background-position: -84px 0px;
-}
-
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(3) > .a2:before {
-  background-position: -168px 0px;
-}
-
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(4) > .a2:before {
-  background-position: -252px 0px;
-}
-
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(5) > .a2:before {
-  background-position: -340px 0px;
-}
-
-#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(6) > .a2:before {
-  background-position: -424px 0px;
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li:nth-child(8):hover > a:before {
+  background-position: -672px -84px;
 }
 
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li .a2:before {
