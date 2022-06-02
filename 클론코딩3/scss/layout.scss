@@ -153,6 +153,21 @@ body.on {
             display: block;
             height: 100%;
             text-align: center;
+            &:after {
+              display: block;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              content: '';
+              width: 0;
+              height: 4px;
+              background: $gnbHoverColor;
+              transition: .3s;
+            }
+            &.current:after {
+              left: 0;
+              width: 100%;
+            }
             &.current + .item {
               opacity: 1;
               display: block;

@@ -293,6 +293,23 @@ body.on {
   text-align: center;
 }
 
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li > a:after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  content: '';
+  width: 0;
+  height: 4px;
+  background: #345aa0;
+  transition: .3s;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li > a.current:after {
+  left: 0;
+  width: 100%;
+}
+
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li > a.current + .item {
   opacity: 1;
   display: block;
