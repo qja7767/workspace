@@ -286,6 +286,10 @@ body.on {
                       color: $gnbHoverColor;
                       transition: .2s;
                     }
+                    &:hover:before {
+                      border: 1px solid $gnbHoverColor;
+                      border-radius: 50%;
+                    }
                     &:before {
                       display: block;
                       opacity: 1;
