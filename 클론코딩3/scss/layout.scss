@@ -3,16 +3,10 @@ body {
   letter-spacing: -0.02em;
   // font-family: 'Noto Sans KR', sans-serif;
   font-family: 'Nanum Gothic', sans-serif;
-
 }
 
-header * {
-  z-index: 1;
-}
-
-span {
-  line-height: 1.6;
-}
+header * { z-index: 1; }
+span { line-height: 1.6; }
 
 body.on {
   content: '';
@@ -115,11 +109,7 @@ body.on {
   min-height: 92px;
   border-top: 1px solid #eee;
   z-index: 10;
-  &.open {
-    // min-height: 700px;
-    transition: .5s;
-    // box-shadow : rgba(0,0,0,0.6) 0 0 0 9999px;
-  }
+  &.open { transition: .5s; }
   #gnb {
     position: absolute;
     top: 0px;

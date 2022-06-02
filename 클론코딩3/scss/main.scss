@@ -1,0 +1,18 @@
+
+#body-layout {
+  width: 100%;
+  display: block;
+  .main-wrap {
+    overflow: hidden;
+    background: url("../img/bg_now.png") no-repeat center bottom;
+    background-size: 100% auto;
+    width: 100%;
+    // font-size: 0;
+    .common-info-box {
+      position: relative;
+      padding: 25px 0;
+      margin-bottom: 45px;
+      background: #eff3f6;
+    }
+  }
+}
