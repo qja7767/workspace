@@ -132,6 +132,10 @@ header * {
   z-index: 1;
 }
 
+span {
+  line-height: 1.6;
+}
+
 body.on {
   content: '';
   z-index: 0;
@@ -275,6 +279,11 @@ body.on {
   height: 100%;
   margin: 0;
   vertical-align: top;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li:hover > a > span {
+  color: #345aa0;
+  transition: .2s;
 }
 
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li > a {
@@ -459,6 +468,11 @@ body.on {
   background: transparent;
 }
 
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li a:hover span {
+  color: #345aa0;
+  transition: .2s;
+}
+
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul.depth2-2 li a:before {
   display: block;
   opacity: 1;
@@ -498,6 +512,11 @@ body.on {
   vertical-align: top;
 }
 
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul li.n1_1 > a:hover {
+  background: #345aa0;
+  transition: .2s;
+}
+
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul li.n1_1 > a > span {
   display: inline-block;
   color: #fff;
@@ -510,7 +529,7 @@ body.on {
   float: right;
   width: calc( 100% - 210px);
   min-height: 56px;
-  padding: 10px 0 10px 25px;
+  padding: 10px 0 10px 10px;
   border-bottom: 1px dashed #c4c6c8;
 }
 
@@ -518,6 +537,12 @@ body.on {
   display: inline-block;
   position: relative;
   margin: 3px 13px 3px 0;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul li.n1_1 .depth3-ul > li:hover a span {
+  color: #345aa0;
+  text-decoration: underline;
+  transition: .2s;
 }
 
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item .depth2-ul li.n1_1 .depth3-ul > li > a {
