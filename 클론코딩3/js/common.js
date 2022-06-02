@@ -10,6 +10,7 @@ $(function() {
     }
   });
 
+  // GNB 마우스엔터 위치 인식후 높이값 조정 및 클래스 부여
   function gnbHover(elem1, elem2, elem3){
     $(elem1).on({
       mouseenter: function(){
