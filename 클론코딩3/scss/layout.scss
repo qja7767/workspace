@@ -89,6 +89,9 @@ body.on {
   z-index: 11;
   float: left;
   margin: 16px;
+  .logo {
+    transform: translateY( -30px );
+  }
   }
   .utile-wrap {
     height: 92px;

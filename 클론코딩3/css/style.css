@@ -220,6 +220,10 @@ body.on {
   margin: 16px;
 }
 
+.logo-gnb #logo .logo {
+  transform: translateY(-30px);
+}
+
 .logo-gnb .utile-wrap {
   height: 92px;
   float: right;
