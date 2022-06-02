@@ -1,7 +1,7 @@
-
 #body-layout {
   width: 100%;
   display: block;
+
   .main-wrap {
     overflow: hidden;
     background: url("../img/bg_now.png") no-repeat center bottom;
@@ -13,12 +13,14 @@
       padding: 25px 0;
       margin-bottom: 45px;
       background: #eff3f6;
+
       .layout {
         .weather-box {
           position: relative;
           display: inline-block;
           vertical-align: middle;
           z-index: 10;
+
           .title-box {
             display: inline-block;
             vertical-align: middle;
@@ -29,11 +31,13 @@
             border: 1px solid #e0e0e0;
             background: #fff;
             text-align: center;
+
             .title {
               display: block;
               margin: 0 auto 10px;
               width: 93px;
               height: 57px;
+
               a {
                 font-size: 0;
                 display: block;
@@ -42,16 +46,20 @@
                 background: url("../img/taegeukgi.png");
               }
             }
+
             .date {
               display: inline-block;
               vertical-align: middle;
               font-size: 13px;
               color: #828282;
+              font-weight: 600;
             }
           }
+
           .data-box {
             display: inline-block;
             vertical-align: middle;
+
             .dust-box {
               strong {
                 display: inline-block;
@@ -60,6 +68,7 @@
                 font-size: 14px;
                 color: #282828;
               }
+
               .dust {
                 display: inline-block;
                 vertical-align: middle;
@@ -68,11 +77,39 @@
                 color: #282828;
                 font-weight: 600;
               }
+
               .status.em1 {
                 color: #0d75b4;
                 font-size: 14px;
                 font-weight: 600;
               }
+            }
+          }
+        }
+        .population-box {
+          float: right;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 20px;
+          position: relative;
+          z-index: 10;
+          .title-box {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px 0 0 36px;
+            background: url("../img/ico_population.svg") left center no-repeat;
+            a {
+              display: block;
+            }
+            strong {
+              font-size: 17px;
+              font-weight: 600;
+              color: #282828;
+              line-height: 1.2;
+            }
+            span {
+              font-size: 14px;
+              color: #777;
             }
           }
         }

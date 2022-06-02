@@ -698,6 +698,7 @@ body.on {
   vertical-align: middle;
   font-size: 13px;
   color: #828282;
+  font-weight: 600;
 }
 
 #body-layout .main-wrap .common-info-box .layout .weather-box .data-box {
@@ -726,4 +727,36 @@ body.on {
   color: #0d75b4;
   font-size: 14px;
   font-weight: 600;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box {
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .title-box {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 0 0 36px;
+  background: url("../img/ico_population.svg") left center no-repeat;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .title-box a {
+  display: block;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .title-box strong {
+  font-size: 17px;
+  font-weight: 600;
+  color: #282828;
+  line-height: 1.2;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .title-box span {
+  font-size: 14px;
+  color: #777;
 }
