@@ -315,6 +315,10 @@ body.on {
   display: block;
 }
 
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li > a.current span:before {
+  opacity: 1;
+}
+
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li > a > span {
   display: inline-block;
   height: 100%;
@@ -323,6 +327,19 @@ body.on {
   font-weight: 700;
   color: #282828;
   vertical-align: middle;
+}
+
+#gnb-layout #gnb .gnb-wrap .depth1-ul > li > a > span:before {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 9px;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #345aa0;
+  transition: .3s;
 }
 
 #gnb-layout #gnb .gnb-wrap .depth1-ul > li .item {
