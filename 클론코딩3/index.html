@@ -579,9 +579,9 @@
           </div>
           <div class="population-box">
             <div class="title-box">
-                <a href="#">
-                  <strong>중구의 인구는?</strong>
-                </a>
+              <a href="#">
+                <strong>중구의 인구는?</strong>
+              </a>
               <span>기준일자 : 2022. 4월말 기준</span>
             </div>
             <ul class="data-list">
@@ -614,6 +614,24 @@
                   <button class="btn-submit">검색</button>
                 </fieldset>
               </form>
+              <div class="keyword">
+                <em>인기검색어</em>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">test1</div>
+                    <div class="swiper-slide">test2</div>
+                    <div class="swiper-slide">test3</div>
+                    <div class="swiper-slide">test4</div>
+                    <div class="swiper-slide">test5</div>
+                    <div class="swiper-slide">test6</div>
+                    <div class="swiper-slide">test7</div>
+                  </div>
+                  <div class="swiper-button-wrap">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -626,7 +644,21 @@
   </div>
   <!-- Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="./js/swiper.js">
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   </script>
 </body>
 
