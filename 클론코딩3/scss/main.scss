@@ -112,6 +112,37 @@
               color: #777;
             }
           }
+          .data-list {
+            display: inline-block;
+            vertical-align: middle;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 20px;
+              text-align: center;
+              &:before {
+                content: '';
+                display: block;
+                height: 40px;
+              }
+              &:first-child:before {
+                background: url("../img/ico_junggu.png") center no-repeat;
+              }
+              &:last-child:before {
+                background: url("../img/ico_daejeon.png") center no-repeat;
+              }
+              a {
+                display: block;
+                strong {
+                  b {
+                    display: block;
+                    font-weight: 600;
+                    line-height: 1;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

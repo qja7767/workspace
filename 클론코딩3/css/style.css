@@ -760,3 +760,39 @@ body.on {
   font-size: 14px;
   color: #777;
 }
+
+#body-layout .main-wrap .common-info-box .layout .population-box .data-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .data-list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  text-align: center;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .data-list li:before {
+  content: '';
+  display: block;
+  height: 40px;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .data-list li:first-child:before {
+  background: url("../img/ico_junggu.png") center no-repeat;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .data-list li:last-child:before {
+  background: url("../img/ico_daejeon.png") center no-repeat;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .data-list li a {
+  display: block;
+}
+
+#body-layout .main-wrap .common-info-box .layout .population-box .data-list li a strong b {
+  display: block;
+  font-weight: 600;
+  line-height: 1;
+}
