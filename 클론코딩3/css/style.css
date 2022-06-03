@@ -911,6 +911,10 @@ body.on {
   width: 100%;
 }
 
+#keyword .input-under-swiper .swiper-wrapper {
+  width: 100%;
+}
+
 #keyword .input-under-swiper .swiper-wrapper .slide-inner-box {
   padding: 0 2px;
   position: relative;
