@@ -911,6 +911,19 @@ body.on {
   width: 100%;
 }
 
+#keyword .input-under-swiper .swiper-wrapper .slide-inner-box {
+  padding: 0 2px;
+  position: relative;
+}
+
+#keyword .input-under-swiper .swiper-wrapper .slide-inner-box a {
+  font-size: 15px;
+}
+
+#keyword .input-under-swiper .swiper-wrapper .slide-inner-box a:hover {
+  border-bottom: 1px solid black;
+}
+
 #keyword .swiper-button-wrap1 {
   position: absolute;
   right: 23px;
