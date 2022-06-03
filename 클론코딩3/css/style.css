@@ -19,6 +19,11 @@ a {
   color: black;
 }
 
+form {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +43,14 @@ body {
 .layout {
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.layout-relative {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  text-align: left;
 }
 
 .container-fluid {
@@ -659,14 +672,14 @@ body.on {
   background: #eff3f6;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   z-index: 10;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .title-box {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .title-box {
   display: inline-block;
   vertical-align: middle;
   width: 120px;
@@ -678,14 +691,14 @@ body.on {
   text-align: center;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .title-box .title {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .title-box .title {
   display: block;
   margin: 0 auto 10px;
   width: 93px;
   height: 57px;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .title-box .title a {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .title-box .title a {
   font-size: 0;
   display: block;
   width: 100%;
@@ -693,7 +706,7 @@ body.on {
   background: url("../img/taegeukgi.png");
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .title-box .date {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .title-box .date {
   display: inline-block;
   vertical-align: middle;
   font-size: 13px;
@@ -701,12 +714,12 @@ body.on {
   font-weight: 600;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .data-box {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .data-box {
   display: inline-block;
   vertical-align: middle;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .data-box .dust-box strong {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .data-box .dust-box strong {
   display: inline-block;
   vertical-align: middle;
   margin-right: 3px;
@@ -714,7 +727,7 @@ body.on {
   color: #282828;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .data-box .dust-box .dust {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .data-box .dust-box .dust {
   display: inline-block;
   vertical-align: middle;
   margin-right: 3px;
@@ -723,13 +736,13 @@ body.on {
   font-weight: 600;
 }
 
-#body-layout .main-wrap .common-info-box .layout .weather-box .data-box .dust-box .status.em1 {
+#body-layout .main-wrap .common-info-box .layout-relative .weather-box .data-box .dust-box .status.em1 {
   color: #0d75b4;
   font-size: 14px;
   font-weight: 600;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box {
   float: right;
   display: inline-block;
   vertical-align: middle;
@@ -738,61 +751,118 @@ body.on {
   z-index: 10;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .title-box {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .title-box {
   display: inline-block;
   vertical-align: middle;
   padding: 5px 0 0 36px;
   background: url("../img/ico_population.svg") left center no-repeat;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .title-box a {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .title-box a {
   display: block;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .title-box strong {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .title-box strong {
   font-size: 17px;
   font-weight: 600;
   color: #282828;
   line-height: 1.2;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .title-box span {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .title-box span {
   font-size: 14px;
   color: #777;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .data-list {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .data-list {
   display: inline-block;
   vertical-align: middle;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .data-list li {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .data-list li {
   display: inline-block;
   vertical-align: middle;
   margin-left: 20px;
   text-align: center;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .data-list li:before {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .data-list li:before {
   content: '';
   display: block;
   height: 40px;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .data-list li:first-child:before {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .data-list li:first-child:before {
   background: url("../img/ico_junggu.png") center no-repeat;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .data-list li:last-child:before {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .data-list li:last-child:before {
   background: url("../img/ico_daejeon.png") center no-repeat;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .data-list li a {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .data-list li a {
   display: block;
 }
 
-#body-layout .main-wrap .common-info-box .layout .population-box .data-list li a strong b {
+#body-layout .main-wrap .common-info-box .layout-relative .population-box .data-list li a strong b {
   display: block;
   font-weight: 600;
   line-height: 1;
+}
+
+#body-layout .main-wrap .common-info-box .layout-relative .search-box {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 9;
+  width: 100%;
+  padding: 0 400px;
+  transform: translate(-5%, -50%);
+}
+
+#body-layout .main-wrap .common-info-box .layout-relative .search-box .align-box {
+  position: relative;
+}
+
+#body-layout .main-wrap .common-info-box .layout-relative .search-box .align-box input {
+  width: calc(100% - 44px);
+  height: 59px;
+  padding: 0 45px 0 25px;
+  border: 1px solid #e8e8e8;
+  border-radius: 29.5px;
+  background: #fff;
+  font-size: 16px;
+}
+
+#body-layout .main-wrap .common-info-box .layout-relative .search-box .align-box .btn-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 59px;
+  height: 59px;
+  border-radius: 100%;
+  background: #345aa0 url("../img/ico_search.svg") center no-repeat;
+  text-indent: -9999px;
+}
+
+#body-layout .main-wrap .common-info-box .layout-relative .search-box .align-box fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+#body-layout .main-wrap .common-info-box .layout-relative .search-box .align-box fieldset legend {
+  overflow: hidden;
+  position: relative;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+#body-layout .main-wrap .common-info-box .layout-relative .search-box .align-box fieldset legend .skip {
+  top: 0;
+  position: absolute;
+  height: 0;
+  font-size: 0;
 }

@@ -558,7 +558,7 @@
   <div id="body-layout">
     <div class="main-wrap">
       <div class="common-info-box">
-        <div class="layout">
+        <div class="layout-relative">
           <div class="weather-box">
             <div class="title-box">
               <span class="title">
@@ -602,6 +602,19 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="search-box">
+            <div class="align-box">
+              <form name="s-type" action="index.html" method="post" target="_blank" title="검색 페이지로 이동합니다.">
+                <fieldset>
+                  <legend>통합검색</legend>
+                  <!-- <label class="skip" for="search-input_m">통합 검색어를 입력하세요.</label> -->
+                  <input type="hidden" name="s-type" value="all">
+                  <input id="search-input_m" type="text" name="qt" value="검색어를 입력하세요" style="ime-mode:active;">
+                  <button class="btn-submit">검색</button>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </div>

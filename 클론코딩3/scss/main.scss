@@ -14,7 +14,7 @@
       margin-bottom: 45px;
       background: #eff3f6;
 
-      .layout {
+      .layout-relative {
         .weather-box {
           position: relative;
           display: inline-block;
@@ -86,6 +86,7 @@
             }
           }
         }
+
         .population-box {
           float: right;
           display: inline-block;
@@ -93,52 +94,114 @@
           padding: 20px;
           position: relative;
           z-index: 10;
+
           .title-box {
             display: inline-block;
             vertical-align: middle;
             padding: 5px 0 0 36px;
             background: url("../img/ico_population.svg") left center no-repeat;
+
             a {
               display: block;
             }
+
             strong {
               font-size: 17px;
               font-weight: 600;
               color: #282828;
               line-height: 1.2;
             }
+
             span {
               font-size: 14px;
               color: #777;
             }
           }
+
           .data-list {
             display: inline-block;
             vertical-align: middle;
+
             li {
               display: inline-block;
               vertical-align: middle;
               margin-left: 20px;
               text-align: center;
+
               &:before {
                 content: '';
                 display: block;
                 height: 40px;
               }
+
               &:first-child:before {
                 background: url("../img/ico_junggu.png") center no-repeat;
               }
+
               &:last-child:before {
                 background: url("../img/ico_daejeon.png") center no-repeat;
               }
+
               a {
                 display: block;
+
                 strong {
                   b {
                     display: block;
                     font-weight: 600;
                     line-height: 1;
                   }
+                }
+              }
+            }
+          }
+        }
+
+        .search-box {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          z-index: 9;
+          width: 100%;
+          padding: 0 400px;
+          transform: translate(-5% , -50%);
+          .align-box {
+            position: relative;
+            input {
+              width: calc(100% - 44px);
+              height: 59px;
+              padding: 0 45px 0 25px;
+              border: 1px solid #e8e8e8;
+              border-radius: 29.5px;
+              background: #fff;
+              font-size: 16px;
+            }
+            .btn-submit {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 59px;
+              height: 59px;
+              border-radius: 100%;
+              background: $gnbHoverColor url("../img/ico_search.svg") center no-repeat;
+              text-indent: -9999px;
+            }
+            fieldset {
+              margin: 0;
+              padding: 0;
+              legend {
+                overflow: hidden;
+                position: relative;
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+                line-height: 0;
+                .skip {
+                  top: 0;
+                  position: absolute;
+                  height: 0;
+                  font-size: 0;
                 }
               }
             }

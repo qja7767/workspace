@@ -25,6 +25,14 @@ body {
   margin: 0 auto;
 }
 
+.layout-relative {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
 .container-fluid {
   background: green;
 }
