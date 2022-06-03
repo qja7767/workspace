@@ -164,7 +164,7 @@
           z-index: 9;
           width: 100%;
           padding: 0 400px;
-          transform: translate(-5% , -50%);
+          transform: translate(-6% , -50%);
           .align-box {
             position: relative;
             input {
@@ -209,5 +209,35 @@
         }
       }
     }
+  }
+}
+
+#keyword {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+  padding: 0 75px 0 85px;
+  margin-top: 10px;
+  text-align: center;
+  em {
+    position: absolute;
+    left: 18px;
+    color: $gnbHoverColor;
+    font-weight: bold;
+    font-size: 15px;
+    background: #eff3f6;
+    z-index: 10;
+  }
+  .input-under-swiper {
+    overflow: hidden;
+    position: relative;
+    height: 24px;
+    width: 100%;
+  }
+  .swiper-button-wrap1 {
+    position: absolute;
+    right: 23px;
+    top: 2px;
   }
 }

@@ -653,6 +653,23 @@ body.on {
   }
 }
 
+/* swiper button custom area */
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-prev {
+  height: 20px;
+  width: 20px;
+  background: red;
+}
+
+.swiper-button-next {
+  height: 20px;
+  width: 20px;
+  background: blue;
+}
+
 #body-layout {
   width: 100%;
   display: block;
@@ -817,7 +834,7 @@ body.on {
   z-index: 9;
   width: 100%;
   padding: 0 400px;
-  transform: translate(-5%, -50%);
+  transform: translate(-6%, -50%);
 }
 
 #body-layout .main-wrap .common-info-box .layout-relative .search-box .align-box {
@@ -865,4 +882,37 @@ body.on {
   position: absolute;
   height: 0;
   font-size: 0;
+}
+
+#keyword {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+  padding: 0 75px 0 85px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#keyword em {
+  position: absolute;
+  left: 18px;
+  color: #345aa0;
+  font-weight: bold;
+  font-size: 15px;
+  background: #eff3f6;
+  z-index: 10;
+}
+
+#keyword .input-under-swiper {
+  overflow: hidden;
+  position: relative;
+  height: 24px;
+  width: 100%;
+}
+
+#keyword .swiper-button-wrap1 {
+  position: absolute;
+  right: 23px;
+  top: 2px;
 }

@@ -614,21 +614,28 @@
                   <button class="btn-submit">검색</button>
                 </fieldset>
               </form>
-              <div class="keyword">
+              <div id="keyword">
                 <em>인기검색어</em>
-                <div class="swiper mySwiper">
+                <div class="swiper input-under-swiper">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">test1</div>
-                    <div class="swiper-slide">test2</div>
-                    <div class="swiper-slide">test3</div>
-                    <div class="swiper-slide">test4</div>
-                    <div class="swiper-slide">test5</div>
-                    <div class="swiper-slide">test6</div>
-                    <div class="swiper-slide">test7</div>
+                    <div class="swiper-slide">
+                      <a href="#">test1</a></div>
+                    <div class="swiper-slide">
+                      <a href="#">test1</a></div>
+                    <div class="swiper-slide">
+                      <a href="#">test1</a></div>
+                    <div class="swiper-slide">
+                      <a href="#">test1</a></div>
+                    <div class="swiper-slide">
+                      <a href="#">test1</a></div>
+                    <div class="swiper-slide">
+                      <a href="#">test1</a></div>
+                    <div class="swiper-slide">
+                      <a href="#">test1</a></div>
                   </div>
-                  <div class="swiper-button-wrap">
-                    <div class="swiper-button-next"></div>
+                  <div class="swiper-button-wrap1">
                     <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                   </div>
                 </div>
               </div>
@@ -645,7 +652,7 @@
   <!-- Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".input-under-swiper", {
       slidesPerView: 4,
       spaceBetween: 30,
       centeredSlides: true,
@@ -655,8 +662,8 @@
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
       },
     });
   </script>
