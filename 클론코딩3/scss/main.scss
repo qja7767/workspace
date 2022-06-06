@@ -209,6 +209,13 @@
         }
       }
     }
+    // 메인 인트로 영역 시작
+    .main-intro-box {
+      margin-bottom: 38px;
+      .visual-box {
+        
+      }
+    }
   }
 }
 
@@ -247,10 +254,5 @@
         }
       }
     }
-  }
-  .swiper-button-wrap1 {
-    position: absolute;
-    right: 23px;
-    top: 2px;
   }
 }
