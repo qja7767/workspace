@@ -213,7 +213,41 @@
     .main-intro-box {
       margin-bottom: 38px;
       .visual-box {
-        
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: calc( 59% - 20px );
+        margin: 0 20px 50px 0;
+        min-height: 397px;
+        border: 10px;
+        overflow: hidden;
+        background: red;
+      }
+      .intro-box {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: calc( 27% - 20px );
+        height: 390px;
+        padding: 40px 24px;
+        padding-top: 100px;
+        margin-right: 20px;
+        border: 1px solid #e8e8e8;
+        border-radius: 10px;
+        background: url("../img/bg_intro.png") right top no-repeat;
+      }
+      .side-nav-box {
+        display: inline-block;
+        vertical-align: top;
+        width: 12.5%;
+        height: 390px;
+        border-radius: 10px;
+        background: $gnbHoverColor;
+      }
+      .main-nav-box {
+        padding-top: 50px;
+        margin-bottom: 80px;
       }
     }
   }
