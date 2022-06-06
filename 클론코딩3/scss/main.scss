@@ -189,6 +189,7 @@
             fieldset {
               margin: 0;
               padding: 0;
+              border: none;
               legend {
                 overflow: hidden;
                 position: relative;
@@ -221,7 +222,6 @@
         min-height: 397px;
         border: 10px;
         overflow: hidden;
-        background: red;
       }
       .intro-box {
         overflow: hidden;
@@ -236,6 +236,55 @@
         border: 1px solid #e8e8e8;
         border-radius: 10px;
         background: url("../img/bg_intro.png") right top no-repeat;
+        .title {
+          margin-bottom: 50px;
+          font-size: 18px;
+          color: #282828;
+          line-height: 1.4;
+          position: relative;
+          display: block;
+          padding-right: 80px;
+          b {
+            display: block;
+          }
+          em {
+            display: block;
+            line-height: 31px;
+            margin: 5px 0 50px;
+            vertical-align: top;
+          }
+        }
+        .intro-bottom-list {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: #717483;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 49%;
+            text-align: center;
+            a {
+              width: 100%;
+              display: table;
+              text-align: center;
+              // transition:
+              span {
+                display: table-cell;
+                vertical-align: middle;
+                height: 100px;
+                font-size: 15px;
+                color: #fff;
+                font-style: normal;
+              }
+            }
+          }
+          li:not(:last-child) {
+            border-right: 1px solid rgba(255,255,255, .15);
+          }
+        }
       }
       .side-nav-box {
         display: inline-block;
