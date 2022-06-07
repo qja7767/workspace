@@ -669,10 +669,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-button-wrap1">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-button-wrap1">
+                  <div class="swiper-button-next"></div>
+                  <div class="btns">
+                    <button class="start">시작</button>
+                    <button class="stop">정지</button>
                   </div>
+                  <div class="swiper-button-prev"></div>
                 </div>
               </div>
             </div>
@@ -815,10 +819,13 @@
   <script>
     //첫번째 인풋 검색창 슬라이더
     var swiper = new Swiper(".input-under-swiper", {
-      slidesPerView: 3,
+      slidesPerView: 2.9,
       spaceBetween: 5,
       centeredSlides: true,
       loop: true,
+      autoplay: {
+        delay: 1500,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
