@@ -620,63 +620,188 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">대형폐기물</a>
+                        <a href="#">대형폐기물</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">반려동물</a>
+                        <a href="#">반려동물</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">지역주택조합</a>
+                        <a href="#">지역주택조합</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">교통과</a>
+                        <a href="#">교통과</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">폐기물</a>
+                        <a href="#">폐기물</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">건축과</a>
+                        <a href="#">건축과</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">환경</a>
+                        <a href="#">환경</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">환경과</a>
+                        <a href="#">환경과</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">정화조</a>
+                        <a href="#">정화조</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slide-inner-box">
-                      <a href="#">음식물</a>
+                        <a href="#">음식물</a>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-button-wrap1">
-                    <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="main-intro-box layout">
+        <div class="visual-box">
+          <div class="swiper main-intro-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-item-box">
+                  <a href="#">
+                    <img src="./img/photo1.png" alt="slide-text">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-item-box">
+                  <a href="#">
+                    <img src="./img/photo2.jpg" alt="slide-text">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-item-box">
+                  <a href="#">
+                    <img src="./img/photo3.jpg" alt="slide-text">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-wrap1">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+        <div class="intro-box">
+          <a href="#" class="title">
+            <b>효 문화 중도시 중구!</b>
+            <em>
+              중구청장
+              <br>
+              <strong>박용갑</strong>
+              입니다.
+            </em>
+          </a>
+          <ul class="intro-bottom-list">
+            <li>
+              <a href="#">
+                <span>
+                  <i>
+                    민선 7기 공약
+                    <br>
+                    (매니페스토)
+                  </i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>
+                  <i>구청장과의 대화</i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="side-nav-box">
+          <ul class="side-nav-list">
+            <li>
+              <a href="#">
+                <span>직원검색</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>찾아오시는길</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>청사안내</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav-box">
+          <ul class="main-nav-list">
+            <li>
+              <a href="#">
+                <span>민원안내</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>중구에바란다</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>
+                  대형폐기물
+                  <br>
+                  수거신청
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>당직병원안내</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>중구 핫이슈</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>
+                  성씨별 조형물
+                  <br>
+                  사이버투어
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -688,10 +813,23 @@
   <!-- Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+    //첫번째 인풋 검색창 슬라이더
     var swiper = new Swiper(".input-under-swiper", {
       slidesPerView: 3,
       spaceBetween: 5,
       centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+      },
+    });
+    //두번째 메인 인트로 슬라이더
+    var swiper = new Swiper(".main-intro-swiper", {
       loop: true,
       pagination: {
         el: ".swiper-pagination",

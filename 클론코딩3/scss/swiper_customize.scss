@@ -1,17 +1,13 @@
 /* swiper button custom area */
 .swiper-button-next:after, .swiper-button-prev:after {
-  display: none;
+  color: rgba(0,0,0, 0.3);
+  left: 7px;
+  position: absolute;
 }
 
-.swiper-button-prev {
-  height: 20px;
-  width: 20px;
-  background: red;
-
+.swiper-button-prev:after{
 }
 
-.swiper-button-next {
-  height: 20px;
-  width: 20px;
-  background: blue;
+.swiper-button-next:after{
+  margin-left: 7px;
 }

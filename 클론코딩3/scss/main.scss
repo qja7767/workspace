@@ -189,6 +189,7 @@
             fieldset {
               margin: 0;
               padding: 0;
+              border: none;
               legend {
                 overflow: hidden;
                 position: relative;
@@ -203,6 +204,175 @@
                   height: 0;
                   font-size: 0;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+    // 메인 인트로 영역 시작
+    .main-intro-box {
+      margin-bottom: 38px;
+      //스와이퍼 영역
+      .visual-box {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: calc( 59% - 20px );
+        margin: 0 20px 50px 0;
+        min-height: 397px;
+        border: 10px;
+        overflow: hidden;
+      }
+      //인물 소개 박스
+      .intro-box {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: calc( 27% - 20px );
+        height: 390px;
+        padding: 40px 24px;
+        padding-top: 100px;
+        margin-right: 20px;
+        border: 1px solid #e8e8e8;
+        border-radius: 10px;
+        background: url("../img/bg_intro.png") right top no-repeat;
+        .title {
+          margin-bottom: 50px;
+          font-size: 18px;
+          color: #282828;
+          line-height: 1.4;
+          position: relative;
+          display: block;
+          padding-right: 80px;
+          b {
+            display: block;
+          }
+          em {
+            display: block;
+            line-height: 31px;
+            margin: 5px 0 50px;
+            vertical-align: top;
+          }
+        }
+        .intro-bottom-list {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: #717483;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 49%;
+            text-align: center;
+            a {
+              width: 100%;
+              display: table;
+              text-align: center;
+              // transition:
+              span {
+                display: table-cell;
+                vertical-align: middle;
+                height: 100px;
+                font-size: 15px;
+                color: #fff;
+                font-style: normal;
+              }
+            }
+          }
+          li:not(:last-child) {
+            border-right: 1px solid rgba(255,255,255, .15);
+          }
+        }
+      }
+      //사이드 nav box
+      .side-nav-box {
+        display: inline-block;
+        vertical-align: top;
+        width: 12.5%;
+        height: 390px;
+        border-radius: 10px;
+        background: $gnbHoverColor;
+        .side-nav-list {
+          height: 100%;
+          padding: 0 30px;
+          li {
+            height: 33.3333%;
+            padding: 20px 0;
+            a {
+              display: block;
+              position: relative;
+              text-align: center;
+              &:before {
+                content: '';
+                display: block;
+                height: 60px;
+              }
+              span {
+                display: block;
+                width: calc( 100% + 60px );
+                margin-left: -30px;
+                font-size: 16px;
+                color: #fff;
+                padding: 2px 0;
+              }
+            }
+          }
+          li:nth-child(1) a:before {background: url("../img/ico_nav1.svg") center no-repeat;}
+          li:nth-child(2) a:before {background: url("../img/ico_side_nav2.svg") center no-repeat;}
+          li:nth-child(3) a:before {background: url("../img/ico_side_nav3.svg") center no-repeat;}
+          li:not(:last-of-type) {
+            border-bottom: 1px solid rgba(255,255,255, .15);
+          }
+        }
+      }
+      //메인 nav box
+      .main-nav-box {
+        padding-top: 5px;
+        margin-bottom: 80px;
+        .main-nav-list {
+          padding: 0 20px;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16%;
+            text-align: center;
+            &:nth-child(1) a:after { background: url("../img/ico_nav2.svg") center no-repeat; }
+            &:nth-child(2) a:after { background: url("../img/ico_nav3.svg") center no-repeat; }
+            &:nth-child(3) a:after { background: url("../img/ico_nav4.svg") center no-repeat; }
+            &:nth-child(4) a:after { background: url("../img/ico_nav5.svg") center no-repeat; }
+            &:nth-child(5) a:after { background: url("../img/ico_nav7.svg") center no-repeat; }
+            &:nth-child(6) a:after { background: url("../img/ico_nav6.svg") center no-repeat; }
+            a {
+              display: inline-block;
+              vertical-align: top;
+              position: relative;
+              padding: 20px 0 20px 95px;
+              &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 80px;
+                height: 79px;
+                border-radius: 100%;
+                transform: translateY( -50% );
+                background: #eff3f6;
+                //transition:
+              }
+              &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 80px;
+                height: 79px;
+                transform: translateY( -50% );
               }
             }
           }
@@ -247,10 +417,5 @@
         }
       }
     }
-  }
-  .swiper-button-wrap1 {
-    position: absolute;
-    right: 23px;
-    top: 2px;
   }
 }
