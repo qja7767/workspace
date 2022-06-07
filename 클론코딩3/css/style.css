@@ -661,20 +661,10 @@ body.on .main-intro-box {
 .swiper-button-next:after, .swiper-button-prev:after {
   color: rgba(0, 0, 0, 0.3);
   left: 7px;
-  position: absolute;
 }
 
 .swiper-button-next:after {
   margin-left: 7px;
-}
-
-.swiper-button-wrap1 {
-  position: absolute;
-  background: red;
-  height: 70px;
-  width: 70px;
-  top: 0;
-  right: 0;
 }
 
 #body-layout {
